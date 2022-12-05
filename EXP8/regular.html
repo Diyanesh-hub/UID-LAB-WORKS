@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+    
+</head>
+
+<body>
+    
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Regular Expression</title>
+        <style>
+            .flex-container {
+              display: flex;
+            }
+            
+            
+            .flex-container tr td{
+                padding-left: 200px;
+                
+            }
+
+            .rec{
+                padding: 10px;
+                margin-top: 5px;
+                margin-left: 480px;
+                margin-right: 300px;
+                border-radius: 0mm 0mm 2mm 2mm;
+                font-size: larger;
+            }
+            a{text-decoration: none;
+                color: black;
+                font-size:xx-large;}
+            
+            .container {
+                background-color: rgb(226, 219, 219);
+                width: 350px;
+            }
+            </style>
+    </head>
+    <body bgcolor="grey">
+        <div class="rec">
+            <table>
+                <tr>
+                    <td style="width: 45%"><a href="index.html">Mouse Event</a></td>
+                    <td style="width: 35%"><a href="regular.html">Regular Expersion</a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <center>
+            
+            <div class="container">
+                <h2>Given Sentence : </h2>
+                <h3>Welcome to Poorvika mobiles</h3>
+                <p>To find position of mobiles <button onclick="finder()">Click Me </button> </p>
+    
+    
+                <p id="demo"></p>
+                <h3 id="te">Buy Two Get One!</h3>
+                <p>To replace Two with One <button onclick="rep()">Click Me</button> </p>
+            </div>
+        </center>
+        <script>
+            function finder() {
+                let text = "Welcome to Poorvika mobiles ";
+                let n = text.search(/mobiles/i);
+                document.getElementById("demo").innerHTML = "mobiles found at : " + n;
+            }
+    
+            function rep() {
+                let text = document.getElementById("te").innerHTML;
+                document.getElementById("te").innerHTML =
+                    text.replace(/Two/i, "One");
+            }
+        </script>
+        
+        
+       
+
+    </body>
+</html>

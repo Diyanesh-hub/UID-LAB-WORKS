@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse Events</title>
+        <style>
+            .flex-container {
+              display: flex;
+            }
+            .flex-container tr td{
+                padding-left: 235px;
+                
+            }
+            .rec{
+                padding: 10px;
+                margin-top: 5px;
+                margin-left: 480px;
+                margin-right: 300px;
+                border-radius: 0mm 0mm 2mm 2mm;
+                font-size: larger;
+            }
+            a{text-decoration: none;
+                color: black;
+                font-size:xx-large;}
+
+            </style>
+    </head>
+    <body bgcolor="grey">
+        <script>
+            var i=0;
+            var j=0;
+            var a=0; 
+            var b=0;   
+            function leftbutton() 
+            {    
+                if(i==0)
+                {
+                    document.getElementById("demo").src="img2.png";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("demo").src="img1.png";
+                    i=0;   
+                }
+            }
+            function double() 
+            {               
+                if(j==0)
+                {
+                    document.getElementById("demo1").src="img4.png";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("demo1").src="img3.png";
+                    j=0;   
+                }        
+            }
+            function mouse() 
+            {               
+                if(a==0)
+                {
+                    document.getElementById("demo2").src="img6.png";
+                    a=1;
+                }
+                else
+                {
+                    document.getElementById("demo2").src="img5.png";
+                    a=0;   
+                }            
+            }
+            function left() 
+            {                
+                if(b==0)
+                {
+                    document.getElementById("demo3").src="img8.png";
+                    b=1;
+                }
+                else
+                {
+                    document.getElementById("demo3").src="img7.png";
+                    b=0;   
+                }
+            }
+        </script>
+        <p style="font-size:large ;float:right;">M.S.DIYANESH<br>CH.EN.U4CYS21015</p>
+        <div class="rec">
+            <table>
+                <tr>
+                    <td style="width: 45%"><a href="home.html">Mouse Event</a></td>
+                    <td style="width: 35%"><a href="regular.html">Regular Expersion</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="flex-container">
+            <div>
+                <table>
+                    <tr ><td style="text-align:center">LEFT BUTTON</td></tr>
+                    <tr>
+                        <td><img src="img1.png" onclick="leftbutton() "id="demo"> </td> 
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr ><td style="text-align:center"> DOUBLE CLICK</td></tr>
+                    <tr>
+                        <td><img src="img3.png" ondblclick="double() "id="demo1"> </td> 
+                    </tr>
+                </table>
+            </div>   
+        </div>
+        <div class="flex-container">
+            <div>
+                <table>
+                    <tr ><td style="text-align:center">MOUSE OVER</td></tr>
+                    <tr>
+                        <td><img src="img5.png" onmouseover="mouse() "id="demo2"> </td> 
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr ><td style="text-align:center">RIGHT CLICK</td></tr>
+                    <tr>
+                        <td><img src="img7.png" oncontextmenu="left() "id="demo3"> </td> 
+                    </tr>
+                </table>
+            </div>   
+        </div>
+       
+
+    </body>
+</html>
