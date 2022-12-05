@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            td{line-height: 1.5;}
+        </style>
+    </head>
+    <body background="img.webp">
+        
+        <p align="center"style="font-size:30px;color:#9EECDA;">Form for Hackathon Applications</p>
+        <form style="font-size:20px">
+           
+            <table align="center" style="background-color:rgb(74, 101, 176) ;">
+                <tr>
+                    <td> first name</td>
+                    <td><input type="text" placeholder="firstname" name="username" required/></td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
+                    <td><input type="text" placeholder="lastname" name="username" required/></td>
+                </tr>
+                <tr>
+                    <td>date of birth</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td >
+                        <input type="radio" name="yn" value="yes" required>Male
+                        <input type="radio" name="yn" value="no" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>phone number</td>
+                    <td><input type="text" pattern="[0-9]{10}" /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td> <input type="text" placeholder="Email id" name="email" required/></td>
+                </tr>
+                <tr>
+                    <td>Institution Name</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                <tr>
+                    <td>country</td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="none" selected disabled hidden>select a country</option>
+                            <option value="india">INDIA</option>
+                            <option value="pak">PAK</option>
+                            <option value="pak">AUS</option>
+                            <option value="pak">SL</option>
+                            <option value="pak">BAN</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit">
+                        <input type="reset" name="reset" value="reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td><button><a href="home.html" >Home</a> </button></td>
+                </tr>
+            </table>
+           
+           
+        </form>
+    </body>
+</html>
