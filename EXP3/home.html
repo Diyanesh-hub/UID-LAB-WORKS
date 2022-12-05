@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amrita CyberNation 2022</title>
+        <style>
+            .im{
+            background-image: url("image.jpeg");
+            height: 100vh; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            .aid{
+                text-decoration: none;
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="im">
+        <p style="font-size:large ;float:right;padding:10px 10px 0px 0px;">M.S.DIYANESH<br>CH.EN.U4CYS21015</p>
+        <img style="margin-left:575px;" src="logo.jpg" width="350" height="150">
+        <h1 align="center"> Amrita <font style="color:#ed0e0e;">CyberNation</font> 22 </h1>
+        <form>
+            <table align="center" style="background-color:hsl(0, 33%, 85%)">
+                <tr>
+                    <td><label for="firstname">First Name</label></td>
+                    <td><input type="text" name="firstname" id="firstname" placeholder="first name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last Name</label></td>
+                    <td><input type="text" name="lastname" id="lastname" placeholder="lastname"></td>
+                </tr>
+                <tr>
+                    <td><label for="bod">Date of Birth</label></td>
+                    <td><input type="date" name="date" id="bod" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="eg:abcd@gmail.com"required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="text" pattern="[0-9]{10}" placeholder="number" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="pswd">Password</label></td>
+                    <td> 
+                        <input type="password" id="pswd" name="pswd" placeholder="eg:Abcd1234" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more 
+                        characters" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea rows="5" cols="25" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Institution Name</td>
+                    <td><input type="text" name="college" placeholder="eg:Amrita School of Engineering"></td>
+                </tr>
+                <tr>
+                    <td>Event</td>
+                    <td>
+                        <input type="checkbox" name="cour" id="con">
+                        <label for="con">Cyber concave</label><br>
+                        <input type="checkbox" name="cour" id="meet">
+                        <label for="meet">Industry Meet</label><br>
+                        <input type="checkbox" name="cour" id="fest">
+                        <label for="fest">Cyber Tech Fest</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Profession</td>
+                    <td>
+                        <select name="prof" id="prof">
+                        <option value="stud" selected>Student</option>
+                        <option value="fctmem">Faculty Member</option>
+                        <option value="indper">Industry person</option>
+                        <option value="other">other</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ID Proof</td>
+                    <td><input type="file" name="ID Proof"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="#T&C">Terms and Conditions</a><br><input type="checkbox" name="T&C" required> I have 
+                        understood all the terms and conditions</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="Register">
+                        <input type="reset" name="reset" value="clear form">    
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </body>
+</html>

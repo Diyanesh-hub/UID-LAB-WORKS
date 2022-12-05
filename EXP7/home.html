@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <head>
+            <title>Form Validation</title>
+            <script src="formvalidation.js" type="text/javascript"></script>
+        </head>
+    <body bgcolor="#F1EEEC ">
+        <p style="font-size:large ;float:left;">M.S.DIYANESH<br>CH.EN.U4CYS21015</p>
+            <h1 style="text-align: center;">REGISTRATION FORM</h1><br><br><br>
+            <form name="RegForm" onsubmit="return GEEKFORGEEKS()" method="post">
+                <table align="center" style="background-color: rgb(219, 216, 216);">
+                    <tr>
+                        <td> Name:</td>
+                        <td><input type="text" name="Name" /></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" name="date"/></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                        </td>
+                    <tr>
+                        <td>E-mail Address:</td>
+                        <td><input type="text" name="EMail" /></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="text" name="Password" /></td>
+                    </tr>
+                    <tr>
+                        <td>Telephone:</td>
+                        <td><input type="text" name="Telephone" /></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea rows="5" cols="25" name="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Institution Name</td>
+                        <td><input type="text" name="college" placeholder="eg:Amrita School of Engineering"></td>
+                    </tr>
+                    <tr>
+                        <td>Event</td>
+                        <td>
+                            <input type="checkbox" name="cour" id="con">
+                            <label for="con">Cyber concave</label><br>
+                            <input type="checkbox" name="cour" id="meet">
+                            <label for="meet">Industry Meet</label><br>
+                            <input type="checkbox" name="cour" id="fest">
+                            <label for="fest">Cyber Tech Fest</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Profession</td>
+                        <td>
+                            <select name="prof" id="prof">
+                            <option value="stud" selected>Student</option>
+                            <option value="fctmem">Faculty Member</option>
+                            <option value="indper">Industry person</option>
+                            <option value="other">other</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ID Proof</td>
+                        <td><input type="file" name="ID Proof"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><input type="submit" value="send" name="Submit" />
+                                <input type="reset" value="Reset" name="Reset" /></p>
+
+                        </td>
+                    </tr>
+                </table> 
+    </form>
+    </body>
+    </html>

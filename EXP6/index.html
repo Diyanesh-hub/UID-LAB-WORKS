@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Loan Calculator</title>
+        <link rel="stylesheet" href="cal.css">
+    </head>
+    <body >
+        <p style="font-size:large ;float:left;">M.S.DIYANESH<br>CH.EN.U4CYS21015</p>
+            <div class="asd"><br>
+                <form class="LoanForm">
+                    <div class="int">
+                    <h2>EMI Loan Calculator</h2>
+                    <table align="center">
+                        <tr>
+                            <td>Amount(₹)</td>
+                            <td>
+                                <div class="input">
+                                    <h></h4> <input type="text" id="amount"  placeholder="Enter Loan Amount">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Interst(%)</td>
+                            <td>
+                                <div class="input">
+                                    <input type="number" id="interest" size=30 placeholder="Enter Interest">    
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td>
+                                <div class="input">
+                                    <input type="number" id="years" size=30 placeholder="Enter Years to Repay">
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" id="digit1" value="1" onClick="buttonclicked(digit1.value)"/>&nbsp;&nbsp;
+                            <input type="button"  id="digit2" value="2" onClick="buttonclicked(digit2.value)"/>&nbsp;&nbsp;
+                            <input type="button"  id="digit3" value="3" onClick="buttonclicked(digit3.value)"/>&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" id="digit4" value="4" onClick="buttonclicked(digit4.value)"/>&nbsp;&nbsp;
+                            <input type="button" id="digit5" value="5" onClick="buttonclicked(digit5.value)"/>&nbsp;&nbsp;
+                            <input type="button" id="digit6" value="6" onClick="buttonclicked(digit6.value)"/>&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" id="digit7" value="7" onClick="buttonclicked(digit7.value)"/>&nbsp;&nbsp;
+                            <input type="button"  id="digit8" value="8" onClick="buttonclicked(digit8.value)"/>&nbsp;&nbsp;
+                            <input type="button"  id="digit9" value="9" onClick="buttonclicked(digit9.value)"/>&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td></td>&nbsp;&nbsp;
+                            <td><input type="button"  id="digit0" value="0" onClick="buttonclicked(digit0.value)"/></td>
+                        </tr>
+                        <tr>  
+                            <td>
+                                <div class="input">
+                                    <input type="button" value="Calculate" onclick="calculateLoanAmount()">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input">
+                                    <input type="reset" value="Clear"  onclick="calculateLoanAmount()">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                    <div class="rest">
+                    <h2>Results</h2>
+                        <table align="center">
+                            <tr>
+                                <td>Monthly Payment :</td>
+                                <td> <input type="text"id="monthly-payment" > </td>
+                            </tr>
+                            <tr>
+                                <td> Total Payment :</td>
+                                <td> <input type="text" id="total-payment" ></td>
+                            </tr>
+                            <tr>
+                                <td>Total Interest :</td>
+                                <td> <input type="text" id="total-interest" ></td>
+                            </tr>
+                        </table>
+        
+                    </div>                 
+                </form>
+                <br>
+            </div>
+        <script lang="javascript" type="text/javascript" src="loan.js">    
+        </script>
+    </body>
+</html>
