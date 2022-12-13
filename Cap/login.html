@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Doctello - login</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="login_style.css">
+	<script src="login_form.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="initCaptcha()">
+	<section id="banner" class="banner" style="height:100%";>
+    <div class="bg-color" style="height:100%";>
+	   <nav class="navbar navbar-default navbar-fixed-top">
+	   <a href="../index.html" style="margin:0;color:white;top:0%;text-decoration:underline;float:left;">Activity Index</a>
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+              <div class="brand">
+              <img src="img/new5.png" class="img-responsive" style="width: 120px; margin-top: -16px;"></a>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="#service">Services</a></li>
+                <li class=""><a href="#about">About</a></li>
+                <li class=""><a href="faq.html">FAQ</a></li>
+                <li class=""><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <img src="logo.png" class="img-responsive" style="width:100px;margin:30px 0px 10px 500px;">
+			<form class="contactForm" action="index.html" onsubmit="return verificate()">
+			<div class="login-form">
+				<div class="form-title">
+					Member Login
+				</div>
+				<div class="form-input">
+					<label for="username">Username</label>
+					<input id="username" type="text">
+				</div>
+				<div class="form-input">
+					<label for="password">Password</label>
+					<input id="password" type="password">
+				</div>
+				<div class="captcha">
+					<label for="captcha-input">Enter Captcha</label>
+					<div class="preview"></div>
+					<div class="captcha-form">
+						<input type="text" id="captcha-form" placeholder="Enter the captcha text">
+						<button class="captcha-refresh" onclick="initCaptcha()"><i class="fa fa-refresh"></i></button>
+					</div>
+				</div>
+				 <div class="form-action">
+                <center><a href="index.html"><input type="submit" class="btn btn-form" value="Login"></input></a></center>
+              </div>
+			  Not a member?<a href="#"> Signup</a>
+			</div>
+			</form>
+          </div>
+		  </nav>
+			</div>
+		</div>
+	</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.container{
+	max-width:1000px;
+	background-color:rgba(256,256,256,0.5);
+	}
+	
+body{
+	background: rgba(28,74,90, 0.8);
+	}
+
+.br-radius-zero {
+    border-radius: 0px;
+}
+.form-control{
+	height: 40px;
+}
